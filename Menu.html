@@ -28,6 +28,7 @@
     </nav>
 
     <main>
+        <h1 > Our Menu </h1>
         <div class="container">
             <!-- #code to retrive Menu data# -->
             <div class="row menubar" >
@@ -42,7 +43,35 @@
                 </div>
             </div>
             <div> 
-                <button class="btn">Review Order</button>
+                <button class="btn" data-toggle="modal" data-target="#myModal">Review Order</button>
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Review Order and Confirm</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body row">
+                        <div class="col-sm text-center">
+                            item description
+                        </div>
+                        <div class="col-sm text-center">
+                            Quantity
+                        </div>
+                        <div class="col-sm text-center">
+                            Item cost
+                        </div>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Confirm</button>
+                        </div>                  
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </main>
