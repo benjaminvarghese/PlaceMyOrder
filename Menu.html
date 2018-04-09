@@ -19,9 +19,9 @@
     <title>Menu</title>
 </head>
 <body>
- <main>
-        <h1 > Welcome to Place My Order </h1>
-    <div class="container">
+<main>
+<h1 > Welcome to Place My Order </h1>
+<div class="container">
      <header>
 
      </header>
@@ -48,23 +48,34 @@
         </div>       
      </nav>
 
-     <div class="tab-content card">
+     <div class="tab-content">
         <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
-            <div class="row menubar nw" >
+            <div class="row nw" >
                 <div class="col-sm text-center">
-                    item #
+                    Item #
                 </div>
                 <div class="col-sm text-center">
-                    Item description
+                    Description
                 </div>
                 <div class="col-sm text-center">
-                    Item cost
+                    Cost
+                </div>
+            </div>
+            <div class="row nw" >
+                <div class="col-sm text-center">
+                    1
+                </div>
+                <div class="col-sm text-center">
+                    Coffee
+                </div>
+                <div class="col-sm text-center">
+                    50
                 </div>
             </div>
                  <!-- #code to retrive Menu data# -->
             <div> 
                 <button class="btn" data-toggle="modal" data-target="#myModal">Review Order</button>
-                <div class="modal fade" id="myModal">
+                <div class="modal fade " id="myModal">
                     <div class="modal-dialog">
                         <div class="modal-content">
                                 <!-- Modal Header -->
@@ -73,7 +84,8 @@
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                                 <!-- Modal body -->
-                            <div class="modal-body row nw">
+                            <div class="modal-body">
+                            <div class="row nw">
                                 <div class="col-sm text-center">
                                     Desc
                                 </div>
@@ -84,9 +96,24 @@
                                     Cost
                                 </div>
                             </div>
+                                <div class="row nw" >
+                                    <div class="col-sm text-center">
+                                        1
+                                    </div>
+                                    <div class="col-sm text-center">
+                                        Coffee
+                                    </div>
+                                    <div class="col-sm text-center">
+                                        50
+                                    </div>
+                                </div>
+                                <!-- code to poppulate placed order -->
+                            </div>
                                 <!-- Modal footer -->
                             <div class="modal-footer">
                                   <button type="button" class="btn btn-danger" data-dismiss="modal">Confirm</button>
+                                  <!-- code to place/confirm order -->
+                                  <!-- Message stating order has been palced-->
                             </div>                  
                         </div>
                     </div>
@@ -96,12 +123,12 @@
 
         <div class="tab-pane fade" id="panel2" role="tabpanel">
             <h6>View Placed Order</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+            <!--code to retrive placed order-->
         </div>
 
         <div class="tab-pane fade" id="panel3" role="tabpanel">
                 <h6>Feedback/Review</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                
         </div>
 
      </div> <!--EOF tab content --> 
@@ -110,7 +137,7 @@
         
      </footer>
 
-    </div> <!--EOF DIV Container -->
+</div> <!--EOF DIV Container -->
 </main>
 <script src="script/jquery-3.3.1.js"></script> 
 <script src="bootstrap/js/popper.js"></script> 
